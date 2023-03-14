@@ -13,7 +13,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import { CoinStatus } from './src/components/atoms';
+import { CoinStatus } from '@components/atoms';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';

@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, View } from 'react-native';
 
-const coinImage = require('../../../assets/images/coin.png');
+const coinImage = require('@assets/images/coin.png');
 
 interface ICoinStatus {
   coinCount: number;
