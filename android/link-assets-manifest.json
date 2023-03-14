@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/EF_jejudoldam.ttf",
+      "sha1": "41ad9642edaad4b275db47f9d6186692327ac521"
+    },
+    {
+      "path": "src/assets/fonts/EF_jejudoldam.woff2",
+      "sha1": "90550781101707984b5e27c8e96a0539c7e77ac0"
+    }
+  ]
+}

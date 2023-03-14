@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
   status: {
     fontSize: 24,
     color: '#000',
+    fontFamily: 'EF_jejudoldam',
   },
   coin: {
     width: 55,
