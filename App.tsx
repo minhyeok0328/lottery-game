@@ -7,16 +7,20 @@
 
 import React from 'react';
 import {
+  Alert,
   SafeAreaView,
   ScrollView,
   StatusBar,
   useColorScheme,
   View,
 } from 'react-native';
-import { CoinStatus } from '@components/atoms';
+import { BaseButton, CoinStatus } from '@components/atoms';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
+  const handleTest = () => {
+    Alert.alert('work!');
+  };
 
   return (
     <SafeAreaView>
@@ -24,6 +28,13 @@ function App(): JSX.Element {
       <ScrollView contentInsetAdjustmentBehavior="automatic">
         <View>
           <CoinStatus coinCount={10} />
+        </View>
+        <View>
+          <BaseButton
+            title="this is button"
+            source={require('@assets/images/trash.png')}
+            onPress={handleTest}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>

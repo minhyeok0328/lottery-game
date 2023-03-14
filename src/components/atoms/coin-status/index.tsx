@@ -1,4 +1,5 @@
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, Text, View } from 'react-native';
+import styles from '@components/atoms/coin-status/styles';
 
 const coinImage = require('@assets/images/coin.png');
 
@@ -14,22 +15,3 @@ export default function CoinStatus({ coinCount }: ICoinStatus) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  wrapper: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    paddingHorizontal: 10,
-  },
-  status: {
-    fontSize: 24,
-    color: '#000',
-    fontFamily: 'EF_jejudoldam',
-  },
-  coin: {
-    width: 55,
-    height: 55,
-  },
-});
