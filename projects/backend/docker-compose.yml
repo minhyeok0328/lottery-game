@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  web-server:
+    build: '.'
+    image: 'node:20.3.0'
+    volumes:
+      - './:/usr/src'
+    ports:
+      - '8080:8080'
+    networks:
+      - 'default'
+
+  local-database:
+    image: 'mariadb:11'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - './init.sql:/docker-entrypoint-initdb.d/init.sql'
+    env_file: '.env'
+    environment:
+      TZ: 'Asia/Seoul'
+    networks:
+      - 'default'
+
+networks:
+  default:
