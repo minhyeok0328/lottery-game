@@ -16,6 +16,16 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "paths": {
+      "@server": [
+        "./src/server/*"
+      ],
+      "@client": [
+        "./src/client/*"
+      ]
+    }
   }
 }
