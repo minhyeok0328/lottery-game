@@ -8,6 +8,16 @@
     "frontend": "pnpm -F @lotterygame/frontend",
     "backend": "pnpm -F @lotterygame/backend"
   },
+  "devDependencies": {
+    "@types/node": "^20.4.4",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.6"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"

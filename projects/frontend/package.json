@@ -16,7 +16,6 @@
     "react-icons": "^4.10.1"
   },
   "devDependencies": {
-    "@lotterygame/shared": "workspace:^",
     "@types/react": "^18.2.16",
     "@types/react-dom": "^18.2.7",
     "autoprefixer": "^10.4.14",
