@@ -1,17 +1,19 @@
 import classNames from 'classnames';
 import { memo } from 'react';
+import Image from 'next/image';
 
-interface Props {
-  src: string;
-  alt: string;
-  title: string;
+interface Props extends HTMLImageElement {
   className?: string;
 }
 
-function Icon({ src, alt, title, className = '' }: Props) {
+function Icon({ className = '', ...props }: Props) {
   return (
     <div className={classNames('icon', className)}>
-      <img src={src} alt={alt} title={title}/>
+      <Image
+        {...props}
+        className={className}
+        quality={1}
+      />
     </div>
   );
 }
